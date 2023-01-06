@@ -1,14 +1,14 @@
 # quest-template
 
 ## Quest Details 
-#### title: 
-#### level: 
-#### skills:
-#### dependencies: 
+#### title: Scheduler Quest 
+#### level: Intermediate 
+#### skills: Bash
+#### dependencies: None 
 
 
 ## Overview 
-Explain what the quest is about and describe the main task the user needs to perform in this quest. 
+User creates a cron job in Bash to download a file. 
 
 
 ## Outline

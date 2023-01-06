@@ -1,8 +1,8 @@
-id: funneldrop_analyze_data
+id: use_curl
 learningObjectives: 
-- Analyzing log data 
+- Transfer Data 
 hints:
-- Try to find what all the users that drop in the funnel have in common
+- Try to find all the total number of books
 startFlow:
   do:
   - actionId: bot_message
