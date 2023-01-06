@@ -15,6 +15,4 @@ skills:
 - communication
 questDependency: docker_localsetup
 slogan: It's time for...
-resources: 
-- https://www.geeksforgeeks.org/curl-command-in-linux-with-examples/
 
