@@ -1,0 +1,27 @@
+id: create_folder
+learningObjectives: 
+- Organize files in Linux 
+hints:
+- You can find instructions on creating folders in Linux [here]
+  (https://fumbani.hashnode.dev/creating-and-deleting-folders-in-linux)
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: keen
+      messages:
+      - text: "Hi ${user.firstName}. Recently, we lost all the important system logs because we didn't have backup log. We're taking an initiative to implement a log backup system to prevent this from happening again."
+        delay: 2000
+      - text: "One thing you need to understand about logs is being organized matters."
+        delay: 2000
+      - text: "Please create a new directory under the root directory called `backups`. This where we'll keep all our backups."
+        delay: 2000
+      - text: "Let me know when you're done,${user.firstName}."
+        delay: 3500
+trigger:
+  type: user_message
+  params: 
+    person: keen
+    messages:
+      - text: "Great!!!"
+        delay: 3500
