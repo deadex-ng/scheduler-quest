@@ -24,4 +24,11 @@ trigger:
     person: keen
     messages:
       - text: "Great!!!"
+        delay: 2000
+  flowNode:
+    person: keen
+    messages:
+      - text: "You're very good with the terminal,${user.firstName}."
+        delay: 2000
+      - text: "Let's go to the next task."
         delay: 3500
