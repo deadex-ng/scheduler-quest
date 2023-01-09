@@ -4,7 +4,7 @@ description: "Are you tired of manually running the same tedious tasks every day
 summary: "Welcome to real life - where you have to download a new data set evrytime."
 level: intermediate
 steps:
-- create_logs
+- create_folder
 - funneldrop_reproduce_locally
 - funneldrop_fixing_bug_pr
 duration: 1.5
