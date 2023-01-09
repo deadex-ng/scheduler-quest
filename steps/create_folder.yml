@@ -16,7 +16,7 @@ startFlow:
         delay: 2000
       - text: "Please create a new directory under the root directory called `backups`. This where we'll keep all our backups."
         delay: 2000
-      - text: "Let me know when you're done,${user.firstName}."
+      - text: "Let me know when you're done by typing `Done`."
         delay: 3500
 trigger:
   type: user_message
@@ -32,3 +32,33 @@ trigger:
         delay: 2000
       - text: "Let's go to the next task."
         delay: 3500
+trigger:
+  type: user_message
+  params: 
+    person: keen
+  flowNode:
+    if:
+      conditions:
+      - conditionId: text_contains_strings
+        params:
+          text: "${userMessageText}"
+          strings:
+          - "Done"
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: keen
+            messages:
+            - text: "Great!!!" 
+              delay: 2000
+            - text: "You're good with the Linux terminal."
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: keen
+            messages:
+            - text: "Are you sure? This doesn't make sense..."
+              delay: 2500
