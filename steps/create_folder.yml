@@ -1,7 +1,8 @@
 id: create_folder
 learningObjectives: 
-- Organize files in Linux 
+- Learn about navigating files using the Linux terminal. Execute at least a single command to manipulate files and directory in Linux.
 hints:
+- A root directory is the top most directory in the hierarchy.
 - You can find instructions on creating folders in Linux [here]
   (https://fumbani.hashnode.dev/creating-and-deleting-folders-in-linux)
 startFlow:

@@ -1,0 +1,44 @@
+id: funneldrop_reproduce_locally
+learningObjectives: 
+- Create backups using tar 
+hints:
+- create the backup with a given filename
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: keen
+      messages:
+      - text: "Now that we've got the `backups` folder, create a backup of the `backend` directoty using tar. Put the backup into the `backups` folder"
+        delay: 1300
+      - text: "Oooh!!! ${user.firstName}, before I forget can you please name the backup as `backend-backup` and don't forget to zip it."
+        delay: 1400
+      - text: "What's the full name of the backup you've made?"
+trigger:
+  type: user_message
+  params: 
+    person: keen
+  flowNode:
+    if:
+      conditions:
+      - conditionId: text_match_regex
+        params:
+          text: "${userMessageText}"
+          regex: "backend-backup.tar.gz"
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: keen
+            messages:
+            - text: "Wow, look at you! You're mastering the Linux terminal"
+              delay: 1500
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: keen
+            messages:
+            - text: "Umm, that doesn't look right."
+              delay: 1400
