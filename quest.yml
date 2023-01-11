@@ -6,6 +6,7 @@ level: intermediate
 steps:
 - create_folder
 - create_backup
+- funneldrop_fixing_bug_pr
 duration: 1.5
 skills:
 - bash
