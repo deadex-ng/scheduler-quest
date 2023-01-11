@@ -2,7 +2,7 @@ name: upload draft
 on:
   push:
     branches:
-      - main
+      - test
 
 jobs:
   upload-draft:
