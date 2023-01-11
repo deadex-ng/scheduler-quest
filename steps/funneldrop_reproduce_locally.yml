@@ -11,7 +11,7 @@ startFlow:
       messages:
       - text: "Now that we've got the `backups` folder, create a backup of the `backend` directoty using tar. Put the backup into the `backups` folder"
         delay: 1300
-      - text: "Oooh!!! ${user.firstName}, before I forget can you please name the backup as `backend-backup` and don't forget to zip it."
+      - text: "Oooh!!! ${user.firstName}, before I forget can you please name the backup as `backend-backup` and don't forget to zip it using the gzip algorithm."
         delay: 1400
       - text: "What's the full name of the backup you've made?"
 trigger:
