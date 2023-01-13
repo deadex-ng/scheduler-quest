@@ -9,9 +9,9 @@ startFlow:
     params:
       person: keen
       messages:
-      - text: "Now that we've got the `backups` folder, create a backup of the `backend` directoty using tar. Put the backup into the `backups` folder"
+      - text: "Now that we've got the `backups` folder, create a backup of the `charts` directory using tar. Put the backup into the `backups` folder"
         delay: 1300
-      - text: "Oooh!!! ${user.firstName}, before I forget can you please name the backup as `backend-backup` and don't forget to zip it using the gzip algorithm."
+      - text: "Oooh!!! ${user.firstName}, before I forget can you please name the backup as `charts-backup` and don't forget to zip it using the gzip algorithm."
         delay: 1400
       - text: "What's the full name of the backup you've made?"
 trigger:
@@ -24,7 +24,7 @@ trigger:
       - conditionId: text_match_regex
         params:
           text: "${userMessageText}"
-          regex: "backend-backup.tar.gz"
+          regex: "charts-backup.tar.gz"
       then:
         do:
         - actionId: bot_message

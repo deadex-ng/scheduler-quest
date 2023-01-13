@@ -9,7 +9,7 @@ startFlow:
     params:
       person: keen
       messages:
-      - text: "OK, I think we have everything we need. Can you please **fix the code** and **open a PR**, so we can release a new version to production?"
+      - text: "We are almost there. We don't need you to be creating backups manually everytime. Please reate a new script under the scripts directory in the backend directory called `charts_backup_daily.sh`"
         delay: 1500
 githubActions:
   frontend:
