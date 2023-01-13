@@ -5,7 +5,6 @@ summary: "Welcome to real life - where you have to download a new data set evryt
 level: intermediate
 steps:
 - create_folder
-- funneldrop_reproduce_locally
 - funneldrop_fixing_bug_pr
 duration: 1.5
 skills:
