@@ -18,6 +18,7 @@ startFlow:
 githubActions:
   backend:
     testFile: "profile.test.js"
+    cmd: "bash ${testFile}"
 trigger:
   type: github_pr_lifecycle_status
   flowNode:
