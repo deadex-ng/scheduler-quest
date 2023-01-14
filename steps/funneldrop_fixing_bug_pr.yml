@@ -15,9 +15,6 @@ startFlow:
         delay: 1500
       - text: "I have to head out for a bit, but just create a PR when you're done and I'll review it."
 
-githubActions:
-  backend:
-    testFile: "profile.test.js"
 trigger:
   type: github_pr_lifecycle_status
   flowNode:
@@ -63,3 +60,8 @@ trigger:
         github_pr_merged:
           do:
           - actionId: finish_step
+
+githubActions:
+  backend:
+    testFile: "profile.test.js"
+    cmd: "bash ${testFile}"
