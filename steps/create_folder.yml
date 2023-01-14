@@ -19,6 +19,7 @@ startFlow:
         delay: 2000
       - text: "Let me know when you're done by typing `Done`."
         delay: 3500
+      person: 
 
 trigger:
   type: user_message
