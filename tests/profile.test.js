@@ -1,7 +1,8 @@
 #!/bin/sh
 
-pwd
-echo "we are in"
-// bash ./scripts/backup_daily.sh ./charts
+mkdir test
 
-// cd ./backups && ls | grep backup.tar.gz
+touch ../test/file1.txt ../test/file2.txt ../test/file3.txt
+
+ls -l ./test
+
