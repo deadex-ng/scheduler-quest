@@ -16,10 +16,7 @@ startFlow:
       - text: "I have to head out for a bit, but just create a PR when you're done and I'll review it."
 
 githubActions:
-  frontend:
-    capabilities:
-    - jest-puppeteer
-    - puppeteer
+  backend:
     testFile: "profile.test.js"
 trigger:
   type: github_pr_lifecycle_status
