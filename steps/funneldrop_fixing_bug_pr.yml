@@ -16,8 +16,8 @@ githubActions:
     capabilities:
     - jest-puppeteer
     - puppeteer
-    testFile: "profile.test.js"
-    cmd: "bash ${testFile}"
+    testFile: profile.test.js
+    cmd: bash ${testFile}
 trigger:
   type: github_pr_lifecycle_status
   flowNode:
