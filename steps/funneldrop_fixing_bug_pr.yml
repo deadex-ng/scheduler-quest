@@ -12,12 +12,10 @@ startFlow:
       - text: "OK, I think we have everything we need. Can you please **fix the code** and **open a PR**, so we can release a new version to production?"
         delay: 1500
 githubActions:
-  frontend:
-    capabilities:
-    - jest-puppeteer
-    - puppeteer
-    testFile: profile.test.js
-    cmd: bash ${testFile}
+  backend:
+    testFile: "check.js"
+    cmd: 
+    - bash ${testFile}
 trigger:
   type: github_pr_lifecycle_status
   flowNode:
